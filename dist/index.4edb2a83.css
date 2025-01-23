@@ -1,2 +1,95 @@
+@import "https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap";
+body {
+  background-color: #011c36;
+  margin: 0;
+  font-family: Mulish, Arial, Helvetica, sans-serif;
+}
 
+header {
+  background-color: #dbe64c;
+  align-items: center;
+  height: 120px;
+  display: flex;
+}
+
+main {
+  color: #fff;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: block;
+}
+
+.footerLine {
+  background-color: #74c365;
+  width: 100%;
+  height: 10px;
+}
+
+footer {
+  background-color: #dbe64c;
+  padding: 2%;
+}
+
+nav {
+  margin-left: auto;
+  margin-right: 2%;
+}
+
+.mainNav {
+  list-style-type: none;
+  display: flex;
+}
+
+.mainNav > li {
+  padding: 50px 20px;
+}
+
+.mainNav > li > a {
+  color: #001f3f;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.mainNav > li > a:active {
+  color: #dbe64c;
+}
+
+.mainNav > li:hover {
+  background-color: #74c365;
+}
+
+.subNav {
+  visibility: hidden;
+  background-color: #74c365;
+  margin-top: 50px;
+  margin-left: -20px;
+  padding-inline-start: 0;
+  list-style-type: none;
+  position: absolute;
+}
+
+.subNav > li {
+  padding: 10px 20px;
+}
+
+.subNav > li:hover {
+  background-color: #dbe64c;
+}
+
+.subNav > li > a {
+  color: #001f3f;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.subNav > li > a:active {
+  color: #74c365;
+}
+
+.homePage:hover .subNav {
+  visibility: visible;
+}
 /*# sourceMappingURL=index.4edb2a83.css.map */
