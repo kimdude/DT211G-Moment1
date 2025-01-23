@@ -36,7 +36,7 @@ footer {
 }
 
 p {
-    width: 70ch;
+    width: clamp(300px, 60%, 70ch);
     line-height: 1.5rem;
 }
 
@@ -104,4 +104,32 @@ nav {
 
 .homePage:hover .subNav {
     visibility: visible;
+}
+
+/* Photos-page */
+#galleryContainer {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: repeat(10, 100px);
+    max-width: 1200px;
+}
+
+#pic1 {
+    grid-area: 2/1/6/2;
+}
+
+#pic2 {
+    grid-area: 2/2/6/3;
+}
+
+#pic3 {
+    grid-area: 2/3/6/4;
+}
+
+#pic4 {
+    grid-area: 6/1/10/2;
+}
+
+#pic5 {
+    grid-area: 6/2/10/3;
 }
