@@ -35,6 +35,16 @@ footer {
     background-color: #dbe64c;
 }
 
+p {
+    width: 70ch;
+    line-height: 1.5rem;
+}
+
+h2 {
+    line-height: 1rem;
+    margin-top: 35px;
+}
+
 /* Main navigation */
 nav {
     margin-left: auto;
