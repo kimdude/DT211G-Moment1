@@ -245,6 +245,14 @@ nav {
     content: "►";
   }
 
+  .mainNav > li > a:active {
+    color: #74c365;
+  }
+
+  .mainNav > li:hover {
+    background-color: #dbe64c;
+  }
+
   #galleryContainer {
     grid-template-rows: repeat(23, 100px);
     grid-template-columns: 100%;
