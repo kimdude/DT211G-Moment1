@@ -76,7 +76,13 @@
             <p>Även bakåtkompabilitet har lagts till genom att lägga till <em>browserlist</em>-fältet i <em>package.json</em>-filen. Jag har utgått direkt 
                 från exemplet och gjort den kompatibel med 95% av webbläsare.</p>
             <h2>Publicering</h2>
+            <p>För att publicera webbplatsen har jag flyttat över Git-repot till <em>Netlify</em>. Där har jag angett <em>npm run build</em> från package.json-filen som
+                build command. Dessutom har jag anget <em>dist</em>-katalogen som publish directory. I efterhand kom jag på att köra <em>npm run build</em> lokalt
+                först för att packetera ihop filerna. Därför gjorde jag det i efterhand och publicerade uppdateringarna.</p>
             <h2>Sammanfattning</h2>
+            <p>Genom NodeJS och Parcel har automatisering av minifiering och transpilering av HTML, CSS och JavaScript gjorts. Även bilder optimeras automatiskt,
+                bakåtkompabilitet och automatisk dist-katalog har skapats. Allt har versionshanterats med git och publicerats med kommandot npm run build på Netlify.
+            </p>
         </section>
     </main>
     <!-- Footer -->
