@@ -3,28 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/index.4edb2a83.css">
     <title>Startsida</title>
+    <link rel="stylesheet" href="/index.4edb2a83.css">
     <script src="/index.18dbc454.js" defer=""></script>
 </head>
 <body>
     <!-- Header -->
     <header>
+        <!-- Menu button for mobile -->
+        <button class="menuButton open" id="openMenu">
+            <span class="menuIcon">
+                <span class="bars"></span>
+                <span class="bars"></span>
+                <span class="bars"></span>
+            </span>
+        </button>
         <!-- Main menu -->
-        <nav>
-            <ul>
-                <li>
+        <nav id="navContainer">
+            <button class="menuButton close" id="closeMenu">
+                <span class="menuIcon">
+                    <span class="bars cross1"></span>
+                    <span class="bars cross2"></span>
+                </span>
+            </button>
+            <ul class="mainNav">
+                <li class="homePage">
                     <a href="/index.html">Startsida</a>
+                    <!-- Sub menu -->
+                    <ul class="subNav">
+                        <li>
+                            <a href="/photos.html">Fotografier</a>
+                        </li>
+                        <li>
+                            <a href="/publish.html">Publicera</a>
+                        </li>
+                    </ul>
                 </li>
-                <!-- Sub menu -->
-                <ul>
-                    <li>
-                        <a href="/photos.html">Fotografier</a>
-                    </li>
-                    <li>
-                        <a href="/publish.html">Publicera</a>
-                    </li>
-                </ul>
                 <li>
                     <a href="#">Alternativ 2</a>
                 </li>
@@ -39,11 +53,20 @@
     </header>
     <!-- Main -->
     <main>
-        <h1>Hej</h1>
+        <section>
+            <h1>Automatisering & publicering</h1>
+            <h2>DT211G - Moment 1</h2>
+            <p>Momentet går ut på att skapa en boilerplate med automatiserade uppgifter. Uppgifterna som ska automatiseras
+                är bland annat minifiering och transpilering av HTML-, CSS-, och JavaScript-filer. Även publicering av webbplatsen ska automatiseras.
+                För att lösa uppgiften används NodeJS, Parcel och Github.</p>
+        </section>
     </main>
     <!-- Footer -->
+    <div class="footerLine"></div>
     <footer>
-        <p>DT211G</p>
+        <p><strong>DT211G, Frontend-baserad webbutveckling</strong></p>
+        <p>Moment 1, Automatisering & publicering</p>
+        <p>Kim Dudenhöfer, 2025-01-23</p>
     </footer>
 </body>
 </html>
