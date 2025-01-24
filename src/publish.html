@@ -60,15 +60,29 @@
                 Visual Studio Codes. Eftersom jag inte är van vid att använda terminalen kändes redan det första steget lite läskigt, även om det inte var särskilt 
                 svårt i sig.</p>
             <h2>Installera Parcel</h2>
-            <p>Sedan installerade jag Parcel med <em>--save-dev</em>, skapade en <em>.gitignore</em>-fil och lade till <em>node_modules</em>-mappen. I ett senare skede 
-                kom jag även på att lägga till mapparna <em>dist</em> och <em>.parcel-cache.</em> Därefter skapade jag mappen <em>src</em> som innehåller en mapp-struktur 
+            <p>Sedan installerade jag Parcel med <em>--save-dev</em>, skapade en <em>.gitignore</em>-fil och lade till <em>node_modules</em>-mappen. Tyvärr glömde jag
+                att lägga in <em>dist</em> och <em>.parcel-cache</em> i filen. Därefter skapade jag mappen <em>src</em> som innehåller en mapp-struktur 
                 för arbetsfilerna. </p>
             <h2>Github</h2>
             <p>När grunden var skapad laddade jag upp projektet till Github. I git-repot skapade jag utöver main-branch en developer-branch. Därefter började jag koda
-                webbplatsen. Under tiden gjorde jag regelbundna commits,
+                webbplatsen. Under tiden gjorde jag regelbundna commits.
             </p>
             <h2>Grafik</h2>
+            <p>Till grafiken letade jag fram några gamla bilder på min dator och flyttade över dem till mappen <em>images</em> under <em>src</em>. Sedan använde jag
+                picture-elementet för att lägga in jpg-filen som fallback-format. För att konvertera jpg-filen till nyare format använde jag source-taggen och
+                formaterade där om bilderna och deras storlek.
+            </p>
             <h2>Bakåtkompabilitet</h2>
+            <p>Även bakåtkompabilitet har lagts till genom att lägga till <em>browserlist</em>-fältet i <em>package.json</em>-filen. Jag har utgått direkt 
+                från exemplet och gjort den kompatibel med 95% av webbläsare.</p>
+            <h2>Publicering</h2>
+            <p>För att publicera webbplatsen har jag flyttat över Git-repot till <em>Netlify</em>. Där har jag angett <em>npm run build</em> från package.json-filen som
+                build command. Dessutom har jag anget <em>dist</em>-katalogen som publish directory. I efterhand kom jag på att köra <em>npm run build</em> lokalt
+                först för att packetera ihop filerna. Därför gjorde jag det i efterhand och publicerade uppdateringarna.</p>
+            <h2>Sammanfattning</h2>
+            <p>Genom NodeJS och Parcel har automatisering av minifiering och transpilering av HTML, CSS och JavaScript gjorts. Även bilder optimeras automatiskt,
+                bakåtkompabilitet och automatisk dist-katalog har skapats. Allt har versionshanterats med git och publicerats med kommandot npm run build på Netlify.
+            </p>
         </section>
     </main>
     <!-- Footer -->
