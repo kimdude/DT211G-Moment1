@@ -3,15 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesheets/main.css">
     <title>Startsida</title>
-    <script src="js/main.js" type="module"></script>
+    <link rel="stylesheet" href="stylesheets/main.css">
+    <script type="module" src="js/main.js" defer></script>
 </head>
 <body>
     <!-- Header -->
     <header>
+        <!-- Menu button for mobile -->
+        <button class="menuButton open" id="openMenu">
+            <span class="menuIcon">
+                <span class="bars"></span>
+                <span class="bars"></span>
+                <span class="bars"></span>
+            </span>
+        </button>
         <!-- Main menu -->
-        <nav>
+        <nav id="navContainer">
+            <button class="menuButton close" id="closeMenu">
+                <span class="menuIcon">
+                    <span class="bars cross1"></span>
+                    <span class="bars cross2"></span>
+                </span>
+            </button>
             <ul class="mainNav">
                 <li class="homePage">
                     <a href="index.html">Startsida</a>

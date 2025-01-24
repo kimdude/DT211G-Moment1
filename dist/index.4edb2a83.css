@@ -103,6 +103,39 @@ nav {
   visibility: visible;
 }
 
+.menuButton {
+  background-color: #dbe64c;
+  border: none;
+}
+
+.bars {
+  color: #001f3f;
+  background-color: #001f3f;
+  width: 25px;
+  height: 5px;
+  margin: 5px;
+  display: block;
+}
+
+.cross1 {
+  transform: rotate(40deg);
+}
+
+.cross2 {
+  margin-top: -10px;
+  transform: rotate(-40deg);
+}
+
+#openMenu {
+  margin-left: auto;
+  margin-right: 5%;
+  display: none;
+}
+
+#closeMenu {
+  display: none;
+}
+
 #galleryContainer {
   grid-template-rows: repeat(10, 100px);
   grid-template-columns: 33.3% 33.3% 33.3%;
@@ -128,5 +161,53 @@ nav {
 
 #pic5 {
   grid-area: 6 / 2 / 10 / 3;
+}
+
+@media only screen and (width <= 800px) {
+  #openMenu {
+    display: block;
+  }
+
+  #navContainer {
+    z-index: 3;
+    margin-right: 0;
+    display: none;
+  }
+
+  #closeMenu {
+    margin-top: 370px;
+    margin-bottom: 0;
+    display: flex;
+  }
+
+  .mainNav {
+    background-color: #dbe64c;
+    padding-bottom: 30px;
+    padding-right: 50px;
+    display: block;
+  }
+
+  .mainNav > li {
+    padding: 20px 20px 20px 10px;
+  }
+
+  .mainNav > li:nth-child(2) {
+    margin-top: 100px;
+  }
+
+  .subNav {
+    visibility: visible;
+    background-color: #dbe64c;
+    margin-top: 15px;
+    margin-left: 0;
+  }
+
+  .subNav > li {
+    padding: 15px;
+  }
+
+  .subNav > li:before {
+    content: "►";
+  }
 }
 /*# sourceMappingURL=index.4edb2a83.css.map */

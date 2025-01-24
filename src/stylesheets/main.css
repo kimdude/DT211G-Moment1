@@ -106,6 +106,40 @@ nav {
     visibility: visible;
 }
 
+/* Main navigation for mobile */
+.menuButton {
+    background-color: #dbe64c;
+    border: none;
+}
+
+.bars {
+    display: block;
+    width: 25px;
+    height: 5px;
+    margin: 5px;
+    background-color: #001F3F;
+    color: #001F3F;
+}
+
+.cross1 {
+    transform: rotate(40deg);
+}
+
+.cross2 {
+    transform: rotate(-40deg);
+    margin-top: -10px;
+}
+
+#openMenu {
+    display: none; /* Ändras*/
+    margin-left: auto;
+    margin-right: 5%;
+}
+
+#closeMenu {
+    display: none; /* Ändras*/
+}
+
 /* Photos-page */
 #galleryContainer {
     display: grid;
@@ -132,4 +166,17 @@ nav {
 
 #pic5 {
     grid-area: 6/2/10/3;
+}
+
+/* Screens under 800px */
+@media only screen and (max-width: 800) {
+    #openMenu { display: block; } /* Ändras */
+    #navContainer { display: none; z-index: 3; margin-right: 0px; } 
+    #closeMenu { display: flex; margin-top: 370px; margin-bottom: 0px; } 
+    .mainNav { display: block; padding-bottom: 30px; padding-right: 50px; background-color: #dbe64c;}
+    .mainNav > li { padding: 20px 20px 20px 10px; }
+    .mainNav > li:nth-child(2) { margin-top: 100px; }
+    .subNav { visibility: visible; background-color: #dbe64c; margin-top: 15px; margin-left: -0px;}
+    .subNav > li { padding: 15px 15px 15px 15px; }
+    .subNav > li::before { content: "►";}
 }
