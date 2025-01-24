@@ -16,7 +16,7 @@ header {
 
 main {
     display: block;
-    width: 80%;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 40px;
@@ -33,6 +33,11 @@ main {
 footer {
     padding: 2%;
     background-color: #dbe64c;
+}
+
+section {
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 p {
@@ -168,8 +173,20 @@ nav {
     grid-area: 6/2/10/3;
 }
 
+/* Screens under 1200px */
+@media only screen and (max-width: 1200) {
+    /* Photo-page */
+    #galleryContainer { grid-template-columns: 50% 50%; grid-template-rows: repeat(15, 100px); max-width: 90%; margin-left: auto; margin-right: auto; }
+    #pic1 { grid-area: 2/1/6/2; }
+    #pic2 { grid-area: 2/2/6/3; }
+    #pic3 { grid-area: 6/1/10/2; }
+    #pic4 { grid-area: 6/2/10/3; }
+    #pic5 { grid-area: 10/1/14/2; }
+}
+
 /* Screens under 800px */
 @media only screen and (max-width: 800) {
+    /* Main menu */
     #openMenu { display: block; } /* Ändras */
     #navContainer { display: none; z-index: 3; margin-right: 0px; } 
     #closeMenu { display: flex; margin-top: 370px; margin-bottom: 0px; } 
@@ -179,4 +196,12 @@ nav {
     .subNav { visibility: visible; background-color: #dbe64c; margin-top: 15px; margin-left: -0px;}
     .subNav > li { padding: 15px 15px 15px 15px; }
     .subNav > li::before { content: "►";}
+
+        /* Photo-page */
+        #galleryContainer { grid-template-columns: 100%; grid-template-rows: repeat(23, 100px); max-width: 90%; margin-left: auto; margin-right: auto; }
+        #pic1 { grid-area: 2/1/6/2; }
+        #pic2 { grid-area: 6/1/10/1; }
+        #pic3 { grid-area: 10/1/14/2; }
+        #pic4 { grid-area: 14/1/18/2; }
+        #pic5 { grid-area: 18/1/22/2; }
 }

@@ -14,7 +14,7 @@ header {
 
 main {
   color: #fff;
-  width: 80%;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 40px;
@@ -31,6 +31,11 @@ main {
 footer {
   background-color: #dbe64c;
   padding: 2%;
+}
+
+section {
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 p {
@@ -163,6 +168,36 @@ nav {
   grid-area: 6 / 2 / 10 / 3;
 }
 
+@media only screen and (width <= 1200px) {
+  #galleryContainer {
+    grid-template-rows: repeat(15, 100px);
+    grid-template-columns: 50% 50%;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #pic1 {
+    grid-area: 2 / 1 / 6 / 2;
+  }
+
+  #pic2 {
+    grid-area: 2 / 2 / 6 / 3;
+  }
+
+  #pic3 {
+    grid-area: 6 / 1 / 10 / 2;
+  }
+
+  #pic4 {
+    grid-area: 6 / 2 / 10 / 3;
+  }
+
+  #pic5 {
+    grid-area: 10 / 1 / 14 / 2;
+  }
+}
+
 @media only screen and (width <= 800px) {
   #openMenu {
     display: block;
@@ -208,6 +243,34 @@ nav {
 
   .subNav > li:before {
     content: "►";
+  }
+
+  #galleryContainer {
+    grid-template-rows: repeat(23, 100px);
+    grid-template-columns: 100%;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #pic1 {
+    grid-area: 2 / 1 / 6 / 2;
+  }
+
+  #pic2 {
+    grid-area: 6 / 1 / 10 / 1;
+  }
+
+  #pic3 {
+    grid-area: 10 / 1 / 14 / 2;
+  }
+
+  #pic4 {
+    grid-area: 14 / 1 / 18 / 2;
+  }
+
+  #pic5 {
+    grid-area: 18 / 1 / 22 / 2;
   }
 }
 /*# sourceMappingURL=index.4edb2a83.css.map */
