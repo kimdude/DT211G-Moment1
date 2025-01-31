@@ -145,6 +145,32 @@ nav {
     display: none; /* Ändras*/
 }
 
+/* Index */
+#quickMenu {
+    list-style-type: none;
+    display: flex;
+    padding: 20px;
+}
+
+#quickMenu > li:not(:last-of-type) {
+    margin-right: 2%;
+}
+
+#quickMenu > li > a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#quickMenu > li > a:hover {
+    text-decoration: underline;
+}
+
+#quickMenu > li > a::after {
+    content: "►";
+    color: #dbe64c;
+    padding-left: 10px;
+}
+
 /* Photos-page */
 #galleryContainer {
     display: grid;
@@ -171,6 +197,14 @@ nav {
 
 #pic5 {
     grid-area: 6/2/10/3;
+}
+
+/* For screens with light-mode */ 
+@media (prefers-color-scheme: light) {
+    body { background-color: #f8f8f8; }
+    p, h1, h2, h3 { color: #000; }
+    #quickMenu > li > a { color: #000; }
+    #quickMenu > li > a::after { color: #74c365; }
 }
 
 /* Screens under 1200px */
@@ -206,4 +240,10 @@ nav {
     #pic3 { grid-area: 10/1/14/2; }
     #pic4 { grid-area: 14/1/18/2; }
     #pic5 { grid-area: 18/1/22/2; }
+}
+
+/* Screens under 450px */
+@media only screen and (max-width: 450) {
+    #quickMenu { flex-direction: column; }
+    #quickMenu > li:not(:first-of-type) { margin: 10px 0 10px 0;}
 }
